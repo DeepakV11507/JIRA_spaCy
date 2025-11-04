@@ -1,3 +1,10 @@
 baseURL : https://automationexercise.com/
 email : gurugredopru-1824@yopmail.com
 password : 12345678
+
+
+#Add for JIRAUtility.py file
+jira_url: "JIRA_URL"
+username: "USERNAME"
+project: "PROJECT"
+api : "YOUR API KEY"

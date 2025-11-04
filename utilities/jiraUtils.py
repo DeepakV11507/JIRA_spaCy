@@ -8,12 +8,25 @@ from nltk.stem import PorterStemmer
 import nltk
 import os
 from typing import Optional, List
-
+import yaml
+from pathlib import Path
 # Download NLTK data if not already present
 try:
     nltk.data.find('tokenizers/punkt')
 except LookupError:
     nltk.download('punkt')
+
+
+def load_jira_config(config_path='Configurations/config.yaml'):
+    """Load JIRA configuration from YAML file"""
+    # Get absolute path
+    base_path = Path(__file__).parent.parent  # Adjust based on your folder structure
+    full_path = base_path / config_path
+
+    with open(full_path, 'r') as file:
+        config = yaml.safe_load(file)
+        return config
+
 
 class JiraIssueFilterAgent:
     def __init__(self, jira_url, username, api):
@@ -397,7 +410,7 @@ class JiraIssueFilterAgent:
             start_at += max_results
         return sprints
 
-    def create_jira_ticket(self, failed_test):
+    def create_jira_ticket(self, project,failed_test):
         """Create a new JIRA ticket for a failed test with no matching issues and attach the test report."""
         try:
             # Extract data from the failed test
@@ -552,6 +565,12 @@ def read_failed_tests(filepath):
         return []
 
 def main():
+    config = load_jira_config()
+    jira_url = config["jira_url"]
+    username = config["username"]
+    project = config["project"]
+    api = config["api"]
+
     # Initialize the agent
     agent = JiraIssueFilterAgent(jira_url, username, api)
     # Fetch issues from the project
@@ -634,7 +653,7 @@ def main():
 
                 if confirm.lower() in ['y', 'yes']:
                     # Call your create_jira_ticket function
-                    new_issue = agent.create_jira_ticket(test)
+                    new_issue = agent.create_jira_ticket(project,test)
 
                     if new_issue:
                         print(f"Created new JIRA ticket: {new_issue.key}")

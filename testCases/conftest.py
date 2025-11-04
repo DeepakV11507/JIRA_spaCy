@@ -570,9 +570,9 @@ tr:hover {
 
             print("\n=== Running JIRA issue matching utility ===")
 
-            # Path to your JIRA utility script
+            # Path to your JIRA utility script  #JIRA_PATH
             jira_script_path = os.path.join(os.path.dirname(__file__),
-                                            "")
+                                            "/Users/jagdishpatil/Desktop/python_projects/spaCy/utilities/jiraUtils.py")
 
             # Make sure the path is absolute and normalized
             jira_script_path = os.path.abspath(os.path.normpath(jira_script_path))
