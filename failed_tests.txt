@@ -1,0 +1,398 @@
+Maximum video length set to 7 seconds (C2804416803)
+
+ERROR: test_maximum_video_length_set_to_7_seconds (RangerCameraMaxVideoLengthTests.test_maximum_video_length_set_to_7_seconds)
+Traceback (most recent call last):
+File "/root/roku_automation/roku_common/testcase/base.py", line 1140, in run         test_method()
+    File "/workspaces/storage/automated_tests/tests/iot/lt_indoor_camera/ranger_max_event_video_length.py", line 64, in test_maximum_video_length_set_to_7_seconds
+        self._set_max_event_video_length_and_verify_motion_event_duration(video_length=7)
+File "/workspaces/storage/automated_tests/tests/iot/lt_indoor_camera/ranger_max_event_video_length.py", line 43, in _set_max_event_video_length_and_verify_motion_event_duration         wait_for_callable(
+    File "/root/roku_automation/roku_utilities/general.py", line 505, in wait_for_callable
+        raise TimeoutError(f'Timed out waiting for "{method_name}" to return "{expected_response}", saw "{value}"')
+TimeoutError: Timed out waiting for "IoTCameraController.was_event_type_detected" to return "True", saw "False"
+
+Maximum video length set to 7 seconds (C2804416803)
+
+ERROR: test_maximum_video_length_set_to_7_seconds (RangerCameraMaxVideoLengthTests.test_maximum_video_length_set_to_7_seconds)
+Traceback (most recent call last):
+File "/root/roku_automation/roku_common/testcase/base.py", line 1140, in run         test_method()
+    File "/workspaces/storage/automated_tests/tests/iot/lt_indoor_camera/ranger_max_event_video_length.py", line 64, in test_maximum_video_length_set_to_7_seconds
+        self._set_max_event_video_length_and_verify_motion_event_duration(video_length=7)
+File "/workspaces/storage/automated_tests/tests/iot/lt_indoor_camera/ranger_max_event_video_length.py", line 43, in _set_max_event_video_length_and_verify_motion_event_duration         wait_for_callable(
+    File "/root/roku_automation/roku_utilities/general.py", line 505, in wait_for_callable
+        raise TimeoutError(f'Timed out waiting for "{method_name}" to return "{expected_response}", saw "{value}"')
+TimeoutError: Timed out waiting for "IoTCameraController.was_event_type_detected" to return "True", saw "False"
+
+Failure Message: TimeoutError: Timed out waiting for "IoTCameraController.was_event_type_detected" to return "True", saw "False"
+Failure hash: 4ba17de45173246c67d0f36448a25167d6a3d9da21e288caaf05e647f7f6d6af967f8b6984a5a5720880b1b72af382b15088e1d4bc1abe6ee8479b2c7f982800-1.0
+
+
+Maximum video length set to 10 seconds (C2804416804)
+
+FAIL: test_maximum_video_length_set_to_10_seconds (RangerCameraMaxVideoLengthTests.test_maximum_video_length_set_to_10_seconds)
+Traceback (most recent call last):
+File "/root/roku_automation/roku_common/testcase/base.py", line 1140, in run         test_method()
+    File "/workspaces/storage/automated_tests/tests/iot/lt_indoor_camera/ranger_max_event_video_length.py", line 68, in test_maximum_video_length_set_to_10_seconds
+        self._set_max_event_video_length_and_verify_motion_event_duration(video_length=10)
+File "/workspaces/storage/automated_tests/tests/iot/lt_indoor_camera/ranger_max_event_video_length.py", line 58, in _set_max_event_video_length_and_verify_motion_event_duration         self.assertLessEqual(
+AssertionError: Motion event video length is greater than expected
+
+Maximum video length set to 10 seconds (C2804416804)
+
+FAIL: test_maximum_video_length_set_to_10_seconds (RangerCameraMaxVideoLengthTests.test_maximum_video_length_set_to_10_seconds)
+Traceback (most recent call last):
+File "/root/roku_automation/roku_common/testcase/base.py", line 1140, in run         test_method()
+    File "/workspaces/storage/automated_tests/tests/iot/lt_indoor_camera/ranger_max_event_video_length.py", line 68, in test_maximum_video_length_set_to_10_seconds
+        self._set_max_event_video_length_and_verify_motion_event_duration(video_length=10)
+File "/workspaces/storage/automated_tests/tests/iot/lt_indoor_camera/ranger_max_event_video_length.py", line 58, in _set_max_event_video_length_and_verify_motion_event_duration         self.assertLessEqual(
+AssertionError: Motion event video length is greater than expected
+
+Failure Message: AssertionError: Motion event video length is greater than expected
+Failure hash: 268b335e3f63f5567c0e6e31b132b31077cbfaf7120f9f0f270a5cc91d845762ee96193b1a43d4f48d8b9348198b71ce33adebe7d9c6e129cf329053078f3ed5-1.0
+
+
+Camera - Sound Detection Settings (Sensitivity) - Minimum with loud sound noise (C2769314938)
+
+FAIL: test_sound_sensitivity_minimum_loud_noise (LTCameraSoundSensitivityTests.test_sound_sensitivity_minimum_loud_noise)
+Traceback (most recent call last):
+File "/root/roku_automation/roku_common/testcase/base.py", line 1140, in run         test_method()
+    File "/workspaces/automation-ide/automated_tests/tests/iot/lt_indoor_camera/lt_cam_sound_sensitivity.py", line 65, in test_sound_sensitivity_minimum_loud_noise
+        self.assertTrue(
+AssertionError: Sound was not detected in event history with high volume level
+
+Camera - Sound Detection Settings (Sensitivity) - Minimum with loud sound noise (C2769314938)
+
+FAIL: test_sound_sensitivity_minimum_loud_noise (LTCameraSoundSensitivityTests.test_sound_sensitivity_minimum_loud_noise)
+Traceback (most recent call last):
+File "/root/roku_automation/roku_common/testcase/base.py", line 1140, in run         test_method()
+    File "/workspaces/automation-ide/automated_tests/tests/iot/lt_indoor_camera/lt_cam_sound_sensitivity.py", line 65, in test_sound_sensitivity_minimum_loud_noise
+        self.assertTrue(
+AssertionError: Sound was not detected in event history with high volume level
+
+Failure Message: AssertionError: Sound was not detected in event history with high volume level
+Failure hash: d96645f7fb950e5cbe44c26b7af769edcf2516796656d7964df0f43bf4540e92e734691df2658c898a299ab5af0c03efd720b0c18e809ca1e478c5d0f81690d0-1.0
+
+
+Night vision mode ON with IR lights ON (T3034188065)
+
+ERROR: test_night_vision_mode_on_distance_on (LTCameraNightVisionTests.test_night_vision_mode_on_distance_on)
+Traceback (most recent call last):
+File "/root/.virtualenvs/docker-ra/lib/python3.11/site-packages/urllib3/connectionpool.py", line 534, in _make_request         response = conn.getresponse()                              ^^^^^^^^^^^^^^^^^^
+    File "/root/.virtualenvs/docker-ra/lib/python3.11/site-packages/urllib3/connection.py", line 565, in getresponse
+        httplib_response = super().getresponse()
+                                             ^^^^^^^^^^^^^^^^^^^^^
+File "/usr/lib/python3.11/http/client.py", line 1374, in getresponse         response.begin()
+    File "/usr/lib/python3.11/http/client.py", line 318, in begin
+        version, status, reason = self._read_status()
+                                                            ^^^^^^^^^^^^^^^^^^^
+File "/usr/lib/python3.11/http/client.py", line 279, in _read_status         line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/usr/lib/python3.11/socket.py", line 706, in readinto
+        return self._sock.recv_into(b)
+                     ^^^^^^^^^^^^^^^^^^^^^^^
+File "/usr/lib/python3.11/ssl.py", line 1311, in recv_into         return self.read(nbytes, buffer)                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/usr/lib/python3.11/ssl.py", line 1167, in read
+        return self._sslobj.read(len, buffer)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: The read operation timed out
+The above exception was the direct cause of the following exception:
+Traceback (most recent call last):
+    File "/root/.virtualenvs/docker-ra/lib/python3.11/site-packages/requests/adapters.py", line 644, in send
+        resp = conn.urlopen(
+                     ^^^^^^^^^^^^^
+File "/root/.virtualenvs/docker-ra/lib/python3.11/site-packages/urllib3/connectionpool.py", line 841, in urlopen         retries = retries.increment(                             ^^^^^^^^^^^^^^^^^^
+    File "/root/.virtualenvs/docker-ra/lib/python3.11/site-packages/urllib3/util/retry.py", line 474, in increment
+        raise reraise(type(error), error, stacktrace)                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ File "/root/.virtualenvs/docker-ra/lib/python3.11/site-packages/urllib3/util/util.py", line 39, in reraise         raise value     File "/root/.virtualenvs/docker-ra/lib/python3.11/site-packages/urllib3/connectionpool.py", line 787, in urlopen         response = self.make_request(
+                             ^^^^^^^^^^^^^^^^^^^
+File "/root/.virtualenvs/docker-ra/lib/python3.11/site-packages/urllib3/connectionpool.py", line 536, in _make_request         self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+    File "/root/.virtualenvs/docker-ra/lib/python3.11/site-packages/urllib3/connectionpool.py", line 367, in raisetimeout
+        raise ReadTimeoutError(
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='webrtc-service.aspen.rokuapi.net', port=443): Read timed out. (read timeout=20)
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+    File "/root/roku_automation/roku_iot/services/webrtc.py", line 437, in createsession
+        resp = self._negotiate_session(stream_info=stream_info, offer=self.peer_connection.localDescription)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File "/root/roku_automation/roku_iot/services/webrtc.py", line 280, in _negotiate_session         resp = requests.post(                      ^^^^^^^^^^^^^^
+    File "/root/.virtualenvs/docker-ra/lib/python3.11/site-packages/requests/api.py", line 115, in post
+        return request("post", url, data=data, json=json, **kwargs)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File "/root/.virtualenvs/docker-ra/lib/python3.11/site-packages/requests/api.py", line 59, in request         return session.request(method=method, url=url, **kwargs)                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/root/.virtualenvs/docker-ra/lib/python3.11/site-packages/requests/sessions.py", line 589, in request
+        resp = self.send(prep, **sendkwargs)                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ File "/root/.virtualenvs/docker-ra/lib/python3.11/site-packages/requests/sessions.py", line 703, in send         r = adapter.send(request, **kwargs)                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^     File "/root/.virtualenvs/docker-ra/lib/python3.11/site-packages/requests/adapters.py", line 690, in send         raise ReadTimeout(e, request=request) requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='webrtc-service.aspen.rokuapi.net', port=443): Read timed out. (read timeout=20) The above exception was the direct cause of the following exception: Traceback (most recent call last):     File "/root/rokuautomation/rokucommon/testcase/base.py", line 1140, in run         testmethod()
+File "/workspaces/automation-ide/automated_tests/tests/iot/lt_indoor_camera/lt_cam_night_vision.py", line 150, in test_night_vision_mode_on_distance_on         self._verify_image_color(should_be_bw=True)
+    File "/workspaces/automation-ide/automatedtests/tests/iot/ltindoorcamera/ltcamnightvision.py", line 50, in verifyimagecolor         image = self.iot.camera.getscreenshot()
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File "/root/roku_automation/roku_iot/decorators.py", line 94, in _wrapper         return func(self, *args, **kwargs)                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/root/rokuautomation/rokuiot/devices/controllers/camera.py", line 190, in getscreenshot         png, _ = geteventloop().rununtilcomplete(                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ File "/usr/lib/python3.11/asyncio/base_events.py", line 653, in run_until_complete         return future.result()                      ^^^^^^^^^^^^^^^     File "/root/rokuautomation/rokuiot/services/webrtc.py", line 156, in screenshot         await self.createsession(ontrack_callback=callback)
+File "/root/roku_automation/roku_iot/services/webrtc.py", line 440, in _create_session         raise CommandFailed("Failed to initiate connection - has the device crashed?") from exc
+CommandFailed: Failed to initiate connection - has the device crashed?
+
+Night vision mode ON with IR lights ON (T3034188065)
+
+ERROR: test_night_vision_mode_on_distance_on (LTCameraNightVisionTests.test_night_vision_mode_on_distance_on)
+Traceback (most recent call last):
+File "/root/.virtualenvs/docker-ra/lib/python3.11/site-packages/urllib3/connectionpool.py", line 534, in _make_request         response = conn.getresponse()                              ^^^^^^^^^^^^^^^^^^
+    File "/root/.virtualenvs/docker-ra/lib/python3.11/site-packages/urllib3/connection.py", line 565, in getresponse
+        httplib_response = super().getresponse()
+                                             ^^^^^^^^^^^^^^^^^^^^^
+File "/usr/lib/python3.11/http/client.py", line 1374, in getresponse         response.begin()
+    File "/usr/lib/python3.11/http/client.py", line 318, in begin
+        version, status, reason = self._read_status()
+                                                            ^^^^^^^^^^^^^^^^^^^
+File "/usr/lib/python3.11/http/client.py", line 279, in _read_status         line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/usr/lib/python3.11/socket.py", line 706, in readinto
+        return self._sock.recv_into(b)
+                     ^^^^^^^^^^^^^^^^^^^^^^^
+File "/usr/lib/python3.11/ssl.py", line 1311, in recv_into         return self.read(nbytes, buffer)                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/usr/lib/python3.11/ssl.py", line 1167, in read
+        return self._sslobj.read(len, buffer)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: The read operation timed out
+The above exception was the direct cause of the following exception:
+Traceback (most recent call last):
+    File "/root/.virtualenvs/docker-ra/lib/python3.11/site-packages/requests/adapters.py", line 644, in send
+        resp = conn.urlopen(
+                     ^^^^^^^^^^^^^
+File "/root/.virtualenvs/docker-ra/lib/python3.11/site-packages/urllib3/connectionpool.py", line 841, in urlopen         retries = retries.increment(                             ^^^^^^^^^^^^^^^^^^
+    File "/root/.virtualenvs/docker-ra/lib/python3.11/site-packages/urllib3/util/retry.py", line 474, in increment
+        raise reraise(type(error), error, stacktrace)                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ File "/root/.virtualenvs/docker-ra/lib/python3.11/site-packages/urllib3/util/util.py", line 39, in reraise         raise value     File "/root/.virtualenvs/docker-ra/lib/python3.11/site-packages/urllib3/connectionpool.py", line 787, in urlopen         response = self.make_request(
+                             ^^^^^^^^^^^^^^^^^^^
+File "/root/.virtualenvs/docker-ra/lib/python3.11/site-packages/urllib3/connectionpool.py", line 536, in _make_request         self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+    File "/root/.virtualenvs/docker-ra/lib/python3.11/site-packages/urllib3/connectionpool.py", line 367, in raisetimeout
+        raise ReadTimeoutError(
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='webrtc-service.aspen.rokuapi.net', port=443): Read timed out. (read timeout=20)
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+    File "/root/roku_automation/roku_iot/services/webrtc.py", line 437, in createsession
+        resp = self._negotiate_session(stream_info=stream_info, offer=self.peer_connection.localDescription)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File "/root/roku_automation/roku_iot/services/webrtc.py", line 280, in _negotiate_session         resp = requests.post(                      ^^^^^^^^^^^^^^
+    File "/root/.virtualenvs/docker-ra/lib/python3.11/site-packages/requests/api.py", line 115, in post
+        return request("post", url, data=data, json=json, **kwargs)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File "/root/.virtualenvs/docker-ra/lib/python3.11/site-packages/requests/api.py", line 59, in request         return session.request(method=method, url=url, **kwargs)                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/root/.virtualenvs/docker-ra/lib/python3.11/site-packages/requests/sessions.py", line 589, in request
+        resp = self.send(prep, **sendkwargs)                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ File "/root/.virtualenvs/docker-ra/lib/python3.11/site-packages/requests/sessions.py", line 703, in send         r = adapter.send(request, **kwargs)                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^     File "/root/.virtualenvs/docker-ra/lib/python3.11/site-packages/requests/adapters.py", line 690, in send         raise ReadTimeout(e, request=request) requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='webrtc-service.aspen.rokuapi.net', port=443): Read timed out. (read timeout=20) The above exception was the direct cause of the following exception: Traceback (most recent call last):     File "/root/rokuautomation/rokucommon/testcase/base.py", line 1140, in run         testmethod()
+File "/workspaces/automation-ide/automated_tests/tests/iot/lt_indoor_camera/lt_cam_night_vision.py", line 150, in test_night_vision_mode_on_distance_on         self._verify_image_color(should_be_bw=True)
+    File "/workspaces/automation-ide/automatedtests/tests/iot/ltindoorcamera/ltcamnightvision.py", line 50, in verifyimagecolor         image = self.iot.camera.getscreenshot()
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File "/root/roku_automation/roku_iot/decorators.py", line 94, in _wrapper         return func(self, *args, **kwargs)                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/root/rokuautomation/rokuiot/devices/controllers/camera.py", line 190, in getscreenshot         png, _ = geteventloop().rununtilcomplete(                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ File "/usr/lib/python3.11/asyncio/base_events.py", line 653, in run_until_complete         return future.result()                      ^^^^^^^^^^^^^^^     File "/root/rokuautomation/rokuiot/services/webrtc.py", line 156, in screenshot         await self.createsession(ontrack_callback=callback)
+File "/root/roku_automation/roku_iot/services/webrtc.py", line 440, in _create_session         raise CommandFailed("Failed to initiate connection - has the device crashed?") from exc
+CommandFailed: Failed to initiate connection - has the device crashed?
+
+Failure Message: CommandFailed: Failed to initiate connection - has the device crashed?
+Failure hash: 406a258eb4ac781f7094fb1ecb45e1a8350b160d2b8447511588df866649c7e3271ae98b5088b764b992ea6ac162d0b24423039a4e1cc0635ff21a25439c4ec1-1.0
+
+
+Request to url - https://skill-bridge.aspen.msc.rokulabs.net/v1/settings?blocking=true failed with request id: 255b684a-61b9-418b-baf3-330884076e53, Request to url - https://skill-bridge.aspen.msc.rokulabs.net/v1/settings?blocking=true failed with request id: b5f2f74e-32cc-4e60-935c-c556cc154396, Request to url - https://skill-bridge.aspen.msc.rokulabs.net/v1/settings?blocking=true failed with request id: af4b04e7-67c4-435a-9924-67de57b68256, Request to url - https://skill-bridge.aspen.msc.rokulabs.net/v1/settings?blocking=true failed with request id: e86c629b-3226-4002-939f-305fe3b26805, Request to url - https://skill-bridge.aspen.msc.rokulabs.net/v1/command?blocking=true failed with request id: 2565f606-3e1a-4387-82d5-f96f1dceee32, Request to url - https://skill-bridge.aspen.msc.rokulabs.net/v1/settings?blocking=true failed with request id: 9858b85b-eec8-421e-ae19-a7688250df32
+
+Turn Spotlight on/off from the live streaming screen (C2775356394)
+
+ERROR: test_turn_on_off_spotlight_from_live_streaming_screen (RangerSpotlightTests.test_turn_on_off_spotlight_from_live_streaming_screen)
+Traceback (most recent call last):
+File "/root/.virtualenvs/docker-ra/lib/python3.11/site-packages/urllib3/connectionpool.py", line 534, in _make_request         response = conn.getresponse()                              ^^^^^^^^^^^^^^^^^^
+    File "/root/.virtualenvs/docker-ra/lib/python3.11/site-packages/urllib3/connection.py", line 565, in getresponse
+        httplib_response = super().getresponse()
+                                             ^^^^^^^^^^^^^^^^^^^^^
+File "/usr/lib/python3.11/http/client.py", line 1374, in getresponse         response.begin()
+    File "/usr/lib/python3.11/http/client.py", line 318, in begin
+        version, status, reason = self._read_status()
+                                                            ^^^^^^^^^^^^^^^^^^^
+File "/usr/lib/python3.11/http/client.py", line 279, in _read_status         line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/usr/lib/python3.11/socket.py", line 706, in readinto
+        return self._sock.recv_into(b)
+                     ^^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: timed out
+The above exception was the direct cause of the following exception:
+Traceback (most recent call last):
+    File "/root/.virtualenvs/docker-ra/lib/python3.11/site-packages/requests/adapters.py", line 644, in send
+        resp = conn.urlopen(
+                     ^^^^^^^^^^^^^
+File "/root/.virtualenvs/docker-ra/lib/python3.11/site-packages/urllib3/connectionpool.py", line 841, in urlopen         retries = retries.increment(                             ^^^^^^^^^^^^^^^^^^
+    File "/root/.virtualenvs/docker-ra/lib/python3.11/site-packages/urllib3/util/retry.py", line 474, in increment
+        raise reraise(type(error), error, stacktrace)                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ File "/root/.virtualenvs/docker-ra/lib/python3.11/site-packages/urllib3/util/util.py", line 39, in reraise         raise value     File "/root/.virtualenvs/docker-ra/lib/python3.11/site-packages/urllib3/connectionpool.py", line 787, in urlopen         response = self.make_request(
+                             ^^^^^^^^^^^^^^^^^^^
+File "/root/.virtualenvs/docker-ra/lib/python3.11/site-packages/urllib3/connectionpool.py", line 536, in _make_request         self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+    File "/root/.virtualenvs/docker-ra/lib/python3.11/site-packages/urllib3/connectionpool.py", line 367, in raisetimeout
+        raise ReadTimeoutError(
+urllib3.exceptions.ReadTimeoutError: HTTPConnectionPool(host='10.68.28.27', port=80): Read timed out. (read timeout=5)
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+    File "/root/roku_automation/qa_bot/bot.py", line 375, in commandv1
+        req = requests.request(method=method, url=url, json=data, timeout=timeout)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File "/root/.virtualenvs/docker-ra/lib/python3.11/site-packages/requests/api.py", line 59, in request         return session.request(method=method, url=url, **kwargs)                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/root/.virtualenvs/docker-ra/lib/python3.11/site-packages/requests/sessions.py", line 589, in request
+        resp = self.send(prep, **sendkwargs)                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ File "/root/.virtualenvs/docker-ra/lib/python3.11/site-packages/requests/sessions.py", line 703, in send         r = adapter.send(request, **kwargs)                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^     File "/root/.virtualenvs/docker-ra/lib/python3.11/site-packages/requests/adapters.py", line 690, in send         raise ReadTimeout(e, request=request) requests.exceptions.ReadTimeout: HTTPConnectionPool(host='10.68.28.27', port=80): Read timed out. (read timeout=5) During handling of the above exception, another exception occurred: Traceback (most recent call last):     File "/root/.virtualenvs/docker-ra/lib/python3.11/site-packages/urllib3/connectionpool.py", line 534, in _makerequest
+        response = conn.getresponse()
+                             ^^^^^^^^^^^^^^^^^^
+File "/root/.virtualenvs/docker-ra/lib/python3.11/site-packages/urllib3/connection.py", line 565, in getresponse         httplib_response = super().getresponse()                                              ^^^^^^^^^^^^^^^^^^^^^
+    File "/usr/lib/python3.11/http/client.py", line 1374, in getresponse
+        response.begin()
+File "/usr/lib/python3.11/http/client.py", line 318, in begin         version, status, reason = self._read_status()                                                             ^^^^^^^^^^^^^^^^^^^
+    File "/usr/lib/python3.11/http/client.py", line 279, in readstatus
+        line = str(self.fp.readline(MAXLINE + 1), "iso-8859-1")                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ File "/usr/lib/python3.11/socket.py", line 706, in readinto         return self._sock.recv_into(b)                      ^^^^^^^^^^^^^^^^^^^^^^^ TimeoutError: timed out The above exception was the direct cause of the following exception: Traceback (most recent call last): File "/root/.virtualenvs/docker-ra/lib/python3.11/site-packages/requests/adapters.py", line 644, in send         resp = conn.urlopen(                      ^^^^^^^^^^^^^     File "/root/.virtualenvs/docker-ra/lib/python3.11/site-packages/urllib3/connectionpool.py", line 841, in urlopen         retries = retries.increment(                             ^^^^^^^^^^^^^^^^^^ File "/root/.virtualenvs/docker-ra/lib/python3.11/site-packages/urllib3/util/retry.py", line 474, in increment         raise reraise(type(error), error, _stacktrace)                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^     File "/root/.virtualenvs/docker-ra/lib/python3.11/site-packages/urllib3/util/util.py", line 39, in reraise         raise value File "/root/.virtualenvs/docker-ra/lib/python3.11/site-packages/urllib3/connectionpool.py", line 787, in urlopen         response = self._make_request(                              ^^^^^^^^^^^^^^^^^^^     File "/root/.virtualenvs/docker-ra/lib/python3.11/site-packages/urllib3/connectionpool.py", line 536, in _makerequest
+        self.raisetimeout(err=e, url=url, timeoutvalue=readtimeout)
+File "/root/.virtualenvs/docker-ra/lib/python3.11/site-packages/urllib3/connectionpool.py", line 367, in _raise_timeout         raise ReadTimeoutError(
+urllib3.exceptions.ReadTimeoutError: HTTPConnectionPool(host='10.68.28.27', port=80): Read timed out. (read timeout=5)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+File "/root/roku_automation/qa_bot/bot.py", line 375, in _command_v1         req = requests.request(method=method, url=url, json=data, timeout=timeout)                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/root/.virtualenvs/docker-ra/lib/python3.11/site-packages/requests/api.py", line 59, in request
+        return session.request(method=method, url=url, **kwargs)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File "/root/.virtualenvs/docker-ra/lib/python3.11/site-packages/requests/sessions.py", line 589, in request         resp = self.send(prep, **send_kwargs)                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/root/.virtualenvs/docker-ra/lib/python3.11/site-packages/requests/sessions.py", line 703, in send
+        r = adapter.send(request, **kwargs)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File "/root/.virtualenvs/docker-ra/lib/python3.11/site-packages/requests/adapters.py", line 690, in send         raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPConnectionPool(host='10.68.28.27', port=80): Read timed out. (read timeout=5)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+File "/root/.virtualenvs/docker-ra/lib/python3.11/site-packages/urllib3/connectionpool.py", line 534, in _make_request         response = conn.getresponse()                              ^^^^^^^^^^^^^^^^^^
+    File "/root/.virtualenvs/docker-ra/lib/python3.11/site-packages/urllib3/connection.py", line 565, in getresponse
+        httplibresponse = super().getresponse()                                              ^^^^^^^^^^^^^^^^^^^^^ File "/usr/lib/python3.11/http/client.py", line 1374, in getresponse         response.begin()     File "/usr/lib/python3.11/http/client.py", line 318, in begin         version, status, reason = self.readstatus()                                                             ^^^^^^^^^^^^^^^^^^^ File "/usr/lib/python3.11/http/client.py", line 279, in _read_status         line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^     File "/usr/lib/python3.11/socket.py", line 706, in readinto         return self.sock.recvinto(b)                      ^^^^^^^^^^^^^^^^^^^^^^^ TimeoutError: timed out The above exception was the direct cause of the following exception: Traceback (most recent call last):     File "/root/.virtualenvs/docker-ra/lib/python3.11/site-packages/requests/adapters.py", line 644, in send         resp = conn.urlopen(                      ^^^^^^^^^^^^^ File "/root/.virtualenvs/docker-ra/lib/python3.11/site-packages/urllib3/connectionpool.py", line 841, in urlopen         retries = retries.increment(                             ^^^^^^^^^^^^^^^^^^     File "/root/.virtualenvs/docker-ra/lib/python3.11/site-packages/urllib3/util/retry.py", line 474, in increment         raise reraise(type(error), error, _stacktrace)                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ File "/root/.virtualenvs/docker-ra/lib/python3.11/site-packages/urllib3/util/util.py", line 39, in reraise         raise value     File "/root/.virtualenvs/docker-ra/lib/python3.11/site-packages/urllib3/connectionpool.py", line 787, in urlopen         response = self.makerequest(                              ^^^^^^^^^^^^^^^^^^^ File "/root/.virtualenvs/docker-ra/lib/python3.11/site-packages/urllib3/connectionpool.py", line 536, in _make_request         self._raise_timeout(err=e, url=url, timeout_value=read_timeout)     File "/root/.virtualenvs/docker-ra/lib/python3.11/site-packages/urllib3/connectionpool.py", line 367, in _raisetimeout
+        raise ReadTimeoutError(
+urllib3.exceptions.ReadTimeoutError: HTTPConnectionPool(host='10.68.28.27', port=80): Read timed out. (read timeout=5)
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+    File "/root/rokuautomation/qabot/bot.py", line 375, in commandv1
+        req = requests.request(method=method, url=url, json=data, timeout=timeout)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File "/root/.virtualenvs/docker-ra/lib/python3.11/site-packages/requests/api.py", line 59, in request         return session.request(method=method, url=url, **kwargs)                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/root/.virtualenvs/docker-ra/lib/python3.11/site-packages/requests/sessions.py", line 589, in request
+        resp = self.send(prep, **sendkwargs)                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ File "/root/.virtualenvs/docker-ra/lib/python3.11/site-packages/requests/sessions.py", line 703, in send         r = adapter.send(request, **kwargs)                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^     File "/root/.virtualenvs/docker-ra/lib/python3.11/site-packages/requests/adapters.py", line 690, in send         raise ReadTimeout(e, request=request) requests.exceptions.ReadTimeout: HTTPConnectionPool(host='10.68.28.27', port=80): Read timed out. (read timeout=5) The above exception was the direct cause of the following exception: Traceback (most recent call last):     File "/root/rokuautomation/rokucommon/testcase/base.py", line 1140, in run         testmethod()
+File "/workspaces/automation-ide/automated_tests/tests/iot/lt_indoor_camera/ranger_spotlight.py", line 84, in test_turn_on_off_spotlight_from_live_streaming_screen         self.iot.qa_bot.wait_for_gpio_state(pin=IoTGPIOPins.PIN_LED_1.value, state="low", mode="bcm", timeout=5)
+    File "/root/rokuautomation/qabot/decorators.py", line 120, in wrapper         return func(self, *args, **kwargs)                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^ File "/root/roku_automation/qa_bot/bot.py", line 1954, in wait_for_gpio_state         time_taken = cast("str", self._command_v1(location=f"gpio/wait_for_state/{mode}/{pin}/{state}"))                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^     File "/root/rokuautomation/qabot/bot.py", line 378, in _commandv1
+        retryhttp(retriesremaining=retries)
+File "/root/roku_automation/qa_bot/bot.py", line 352, in retry_http         self._command_v1(
+    File "/root/rokuautomation/qabot/bot.py", line 378, in commandv1
+        retryhttp(retriesremaining=retries)
+File "/root/roku_automation/qa_bot/bot.py", line 352, in retry_http         self._command_v1(
+    File "/root/rokuautomation/qabot/bot.py", line 380, in commandv1
+        raise QABotRestError(
+QABotRestError: HTTP connection to 10.68.28.27 timed out after 5 seconds.    Error: HTTPConnectionPool(host='10.68.28.27', port=80): Read timed out. (read timeout=5)
+
+Turn Spotlight on/off from the live streaming screen (C2775356394)
+
+ERROR: test_turn_on_off_spotlight_from_live_streaming_screen (RangerSpotlightTests.test_turn_on_off_spotlight_from_live_streaming_screen)
+Traceback (most recent call last):
+File "/root/.virtualenvs/docker-ra/lib/python3.11/site-packages/urllib3/connectionpool.py", line 534, in _make_request         response = conn.getresponse()                              ^^^^^^^^^^^^^^^^^^
+    File "/root/.virtualenvs/docker-ra/lib/python3.11/site-packages/urllib3/connection.py", line 565, in getresponse
+        httplib_response = super().getresponse()
+                                             ^^^^^^^^^^^^^^^^^^^^^
+File "/usr/lib/python3.11/http/client.py", line 1374, in getresponse         response.begin()
+    File "/usr/lib/python3.11/http/client.py", line 318, in begin
+        version, status, reason = self._read_status()
+                                                            ^^^^^^^^^^^^^^^^^^^
+File "/usr/lib/python3.11/http/client.py", line 279, in _read_status         line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/usr/lib/python3.11/socket.py", line 706, in readinto
+        return self._sock.recv_into(b)
+                     ^^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: timed out
+The above exception was the direct cause of the following exception:
+Traceback (most recent call last):
+    File "/root/.virtualenvs/docker-ra/lib/python3.11/site-packages/requests/adapters.py", line 644, in send
+        resp = conn.urlopen(
+                     ^^^^^^^^^^^^^
+File "/root/.virtualenvs/docker-ra/lib/python3.11/site-packages/urllib3/connectionpool.py", line 841, in urlopen         retries = retries.increment(                             ^^^^^^^^^^^^^^^^^^
+    File "/root/.virtualenvs/docker-ra/lib/python3.11/site-packages/urllib3/util/retry.py", line 474, in increment
+        raise reraise(type(error), error, stacktrace)                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ File "/root/.virtualenvs/docker-ra/lib/python3.11/site-packages/urllib3/util/util.py", line 39, in reraise         raise value     File "/root/.virtualenvs/docker-ra/lib/python3.11/site-packages/urllib3/connectionpool.py", line 787, in urlopen         response = self.make_request(
+                             ^^^^^^^^^^^^^^^^^^^
+File "/root/.virtualenvs/docker-ra/lib/python3.11/site-packages/urllib3/connectionpool.py", line 536, in _make_request         self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+    File "/root/.virtualenvs/docker-ra/lib/python3.11/site-packages/urllib3/connectionpool.py", line 367, in raisetimeout
+        raise ReadTimeoutError(
+urllib3.exceptions.ReadTimeoutError: HTTPConnectionPool(host='10.68.28.27', port=80): Read timed out. (read timeout=5)
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+    File "/root/roku_automation/qa_bot/bot.py", line 375, in commandv1
+        req = requests.request(method=method, url=url, json=data, timeout=timeout)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File "/root/.virtualenvs/docker-ra/lib/python3.11/site-packages/requests/api.py", line 59, in request         return session.request(method=method, url=url, **kwargs)                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/root/.virtualenvs/docker-ra/lib/python3.11/site-packages/requests/sessions.py", line 589, in request
+        resp = self.send(prep, **sendkwargs)                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ File "/root/.virtualenvs/docker-ra/lib/python3.11/site-packages/requests/sessions.py", line 703, in send         r = adapter.send(request, **kwargs)                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^     File "/root/.virtualenvs/docker-ra/lib/python3.11/site-packages/requests/adapters.py", line 690, in send         raise ReadTimeout(e, request=request) requests.exceptions.ReadTimeout: HTTPConnectionPool(host='10.68.28.27', port=80): Read timed out. (read timeout=5) During handling of the above exception, another exception occurred: Traceback (most recent call last):     File "/root/.virtualenvs/docker-ra/lib/python3.11/site-packages/urllib3/connectionpool.py", line 534, in _makerequest
+        response = conn.getresponse()
+                             ^^^^^^^^^^^^^^^^^^
+File "/root/.virtualenvs/docker-ra/lib/python3.11/site-packages/urllib3/connection.py", line 565, in getresponse         httplib_response = super().getresponse()                                              ^^^^^^^^^^^^^^^^^^^^^
+    File "/usr/lib/python3.11/http/client.py", line 1374, in getresponse
+        response.begin()
+File "/usr/lib/python3.11/http/client.py", line 318, in begin         version, status, reason = self._read_status()                                                             ^^^^^^^^^^^^^^^^^^^
+    File "/usr/lib/python3.11/http/client.py", line 279, in readstatus
+        line = str(self.fp.readline(MAXLINE + 1), "iso-8859-1")                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ File "/usr/lib/python3.11/socket.py", line 706, in readinto         return self._sock.recv_into(b)                      ^^^^^^^^^^^^^^^^^^^^^^^ TimeoutError: timed out The above exception was the direct cause of the following exception: Traceback (most recent call last): File "/root/.virtualenvs/docker-ra/lib/python3.11/site-packages/requests/adapters.py", line 644, in send         resp = conn.urlopen(                      ^^^^^^^^^^^^^     File "/root/.virtualenvs/docker-ra/lib/python3.11/site-packages/urllib3/connectionpool.py", line 841, in urlopen         retries = retries.increment(                             ^^^^^^^^^^^^^^^^^^ File "/root/.virtualenvs/docker-ra/lib/python3.11/site-packages/urllib3/util/retry.py", line 474, in increment         raise reraise(type(error), error, _stacktrace)                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^     File "/root/.virtualenvs/docker-ra/lib/python3.11/site-packages/urllib3/util/util.py", line 39, in reraise         raise value File "/root/.virtualenvs/docker-ra/lib/python3.11/site-packages/urllib3/connectionpool.py", line 787, in urlopen         response = self._make_request(                              ^^^^^^^^^^^^^^^^^^^     File "/root/.virtualenvs/docker-ra/lib/python3.11/site-packages/urllib3/connectionpool.py", line 536, in _makerequest
+        self.raisetimeout(err=e, url=url, timeoutvalue=readtimeout)
+File "/root/.virtualenvs/docker-ra/lib/python3.11/site-packages/urllib3/connectionpool.py", line 367, in _raise_timeout         raise ReadTimeoutError(
+urllib3.exceptions.ReadTimeoutError: HTTPConnectionPool(host='10.68.28.27', port=80): Read timed out. (read timeout=5)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+File "/root/roku_automation/qa_bot/bot.py", line 375, in _command_v1         req = requests.request(method=method, url=url, json=data, timeout=timeout)                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/root/.virtualenvs/docker-ra/lib/python3.11/site-packages/requests/api.py", line 59, in request
+        return session.request(method=method, url=url, **kwargs)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File "/root/.virtualenvs/docker-ra/lib/python3.11/site-packages/requests/sessions.py", line 589, in request         resp = self.send(prep, **send_kwargs)                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/root/.virtualenvs/docker-ra/lib/python3.11/site-packages/requests/sessions.py", line 703, in send
+        r = adapter.send(request, **kwargs)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File "/root/.virtualenvs/docker-ra/lib/python3.11/site-packages/requests/adapters.py", line 690, in send         raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPConnectionPool(host='10.68.28.27', port=80): Read timed out. (read timeout=5)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+File "/root/.virtualenvs/docker-ra/lib/python3.11/site-packages/urllib3/connectionpool.py", line 534, in _make_request         response = conn.getresponse()                              ^^^^^^^^^^^^^^^^^^
+    File "/root/.virtualenvs/docker-ra/lib/python3.11/site-packages/urllib3/connection.py", line 565, in getresponse
+        httplibresponse = super().getresponse()                                              ^^^^^^^^^^^^^^^^^^^^^ File "/usr/lib/python3.11/http/client.py", line 1374, in getresponse         response.begin()     File "/usr/lib/python3.11/http/client.py", line 318, in begin         version, status, reason = self.readstatus()                                                             ^^^^^^^^^^^^^^^^^^^ File "/usr/lib/python3.11/http/client.py", line 279, in _read_status         line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^     File "/usr/lib/python3.11/socket.py", line 706, in readinto         return self.sock.recvinto(b)                      ^^^^^^^^^^^^^^^^^^^^^^^ TimeoutError: timed out The above exception was the direct cause of the following exception: Traceback (most recent call last):     File "/root/.virtualenvs/docker-ra/lib/python3.11/site-packages/requests/adapters.py", line 644, in send         resp = conn.urlopen(                      ^^^^^^^^^^^^^ File "/root/.virtualenvs/docker-ra/lib/python3.11/site-packages/urllib3/connectionpool.py", line 841, in urlopen         retries = retries.increment(                             ^^^^^^^^^^^^^^^^^^     File "/root/.virtualenvs/docker-ra/lib/python3.11/site-packages/urllib3/util/retry.py", line 474, in increment         raise reraise(type(error), error, _stacktrace)                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ File "/root/.virtualenvs/docker-ra/lib/python3.11/site-packages/urllib3/util/util.py", line 39, in reraise         raise value     File "/root/.virtualenvs/docker-ra/lib/python3.11/site-packages/urllib3/connectionpool.py", line 787, in urlopen         response = self.makerequest(                              ^^^^^^^^^^^^^^^^^^^ File "/root/.virtualenvs/docker-ra/lib/python3.11/site-packages/urllib3/connectionpool.py", line 536, in _make_request         self._raise_timeout(err=e, url=url, timeout_value=read_timeout)     File "/root/.virtualenvs/docker-ra/lib/python3.11/site-packages/urllib3/connectionpool.py", line 367, in _raisetimeout
+        raise ReadTimeoutError(
+urllib3.exceptions.ReadTimeoutError: HTTPConnectionPool(host='10.68.28.27', port=80): Read timed out. (read timeout=5)
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+    File "/root/rokuautomation/qabot/bot.py", line 375, in commandv1
+        req = requests.request(method=method, url=url, json=data, timeout=timeout)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File "/root/.virtualenvs/docker-ra/lib/python3.11/site-packages/requests/api.py", line 59, in request         return session.request(method=method, url=url, **kwargs)                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/root/.virtualenvs/docker-ra/lib/python3.11/site-packages/requests/sessions.py", line 589, in request
+        resp = self.send(prep, **sendkwargs)                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ File "/root/.virtualenvs/docker-ra/lib/python3.11/site-packages/requests/sessions.py", line 703, in send         r = adapter.send(request, **kwargs)                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^     File "/root/.virtualenvs/docker-ra/lib/python3.11/site-packages/requests/adapters.py", line 690, in send         raise ReadTimeout(e, request=request) requests.exceptions.ReadTimeout: HTTPConnectionPool(host='10.68.28.27', port=80): Read timed out. (read timeout=5) The above exception was the direct cause of the following exception: Traceback (most recent call last):     File "/root/rokuautomation/rokucommon/testcase/base.py", line 1140, in run         testmethod()
+File "/workspaces/automation-ide/automated_tests/tests/iot/lt_indoor_camera/ranger_spotlight.py", line 84, in test_turn_on_off_spotlight_from_live_streaming_screen         self.iot.qa_bot.wait_for_gpio_state(pin=IoTGPIOPins.PIN_LED_1.value, state="low", mode="bcm", timeout=5)
+    File "/root/rokuautomation/qabot/decorators.py", line 120, in wrapper         return func(self, *args, **kwargs)                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^ File "/root/roku_automation/qa_bot/bot.py", line 1954, in wait_for_gpio_state         time_taken = cast("str", self._command_v1(location=f"gpio/wait_for_state/{mode}/{pin}/{state}"))                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^     File "/root/rokuautomation/qabot/bot.py", line 378, in _commandv1
+        retryhttp(retriesremaining=retries)
+File "/root/roku_automation/qa_bot/bot.py", line 352, in retry_http         self._command_v1(
+    File "/root/rokuautomation/qabot/bot.py", line 378, in commandv1
+        retryhttp(retriesremaining=retries)
+File "/root/roku_automation/qa_bot/bot.py", line 352, in retry_http         self._command_v1(
+    File "/root/rokuautomation/qabot/bot.py", line 380, in commandv1
+        raise QABotRestError(
+QABotRestError: HTTP connection to 10.68.28.27 timed out after 5 seconds.    Error: HTTPConnectionPool(host='10.68.28.27', port=80): Read timed out. (read timeout=5)
+
+Failure Message: QABotRestError: HTTP connection to 10.68.28.27 timed out after 5 seconds.  Error: HTTPConnectionPool(host='10.68.28.27', port=80): Read timed out. (read timeout=5)
+Failure hash: cde3e18e8238661b71fe35a7dc026a4a796b1dc97bf77c7948014afdbedbc39b49c02453df99f121c32ec4f9b4aece50e369f27110a02877170c68a817dd8b4b-1.0
+
+
+Settings - Alarm sound detection - Smoke alarm sound -On (C2703862348)
+
+FAIL: test_smoke_alarm_detection (LTCameraAlarmSetting.test_smoke_alarm_detection)
+Traceback (most recent call last):
+File "/root/roku_automation/roku_common/testcase/base.py", line 1151, in run         test_method()
+    File "/workspaces/storage/automated_tests/tests/iot/lt_indoor_camera/lt_cam_alarm_sound_detection.py", line 45, in test_smoke_alarm_detection
+        self._set_alarm_sound_play_audio_verify_event(
+File "/workspaces/storage/automated_tests/tests/iot/lt_indoor_camera/lt_cam_alarm_sound_detection.py", line 38, in _set_alarm_sound_play_audio_verify_event         self.assertTrue(
+AssertionError: CameraNotificationTypes.SMOKE_ALARM was not detected in event history
+
+Settings - Alarm sound detection - Smoke alarm sound -On (C2703862348)
+
+FAIL: test_smoke_alarm_detection (LTCameraAlarmSetting.test_smoke_alarm_detection)
+Traceback (most recent call last):
+File "/root/roku_automation/roku_common/testcase/base.py", line 1151, in run         test_method()
+    File "/workspaces/storage/automated_tests/tests/iot/lt_indoor_camera/lt_cam_alarm_sound_detection.py", line 45, in test_smoke_alarm_detection
+        self._set_alarm_sound_play_audio_verify_event(
+File "/workspaces/storage/automated_tests/tests/iot/lt_indoor_camera/lt_cam_alarm_sound_detection.py", line 38, in _set_alarm_sound_play_audio_verify_event         self.assertTrue(
+AssertionError: CameraNotificationTypes.SMOKE_ALARM was not detected in event history
+
+Failure Message: AssertionError: CameraNotificationTypes.SMOKE_ALARM was not detected in event history
+Failure hash: 6f5790adb4bf7f876389066ecc84d4827b87ae0ec1c83292f14a234d137c79f55e0ab0927ce6a4255b3bffc40b80fcd71844befae6bec9e5ff2aa0965231f4cb-1.0
+Similar failures: ASPEN-7240 (Open)
+View in JIRA

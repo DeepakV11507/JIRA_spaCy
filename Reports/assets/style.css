@@ -1,0 +1,222 @@
+
+body {
+    font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f8f9fa;
+    color: #212529;
+    line-height: 1.5;
+}
+
+h1, h2, h3 {
+    font-family: 'Montserrat', 'Segoe UI', sans-serif;
+    color: #2c3e50;
+}
+
+h1 {
+    text-align: center;
+    padding: 15px;
+    background: linear-gradient(135deg, #4CAF50, #2E7D32);
+    color: white;
+    border-radius: 8px;
+    margin-top: 10px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16);
+    font-weight: 600;
+}
+
+.report-timestamp {
+    text-align: center;
+    color: #6c757d;
+    margin-bottom: 30px;
+    font-style: italic;
+}
+
+.summary-container {
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+}
+
+.results-container {
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin-bottom: 20px;
+    font-size: 14px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+}
+
+th {
+    background-color: #343a40;
+    color: white;
+    font-weight: 600;
+    position: sticky;
+    top: 0;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+td {
+    border-bottom: 1px solid #e9ecef;
+    border-right: 1px solid #e9ecef;
+}
+
+td:last-child {
+    border-right: none;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+tr:hover {
+    background-color: #eff6ff;
+}
+
+.passed {
+    background-color: #e8f5e9;
+}
+
+.passed:hover {
+    background-color: #c8e6c9;
+}
+
+.failed {
+    background-color: #ffebee;
+}
+
+.failed:hover {
+    background-color: #ffcdd2;
+}
+
+.skipped {
+    background-color: #fff8e1;
+}
+
+.skipped:hover {
+    background-color: #ffecb3;
+}
+
+.error {
+    background-color: #ffebee;
+}
+
+.error:hover {
+    background-color: #ffcdd2;
+}
+
+.summary-box {
+    display: inline-block;
+    width: 22%;
+    margin: 0 1%;
+    padding: 15px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.summary-box:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.total-box {
+    background: linear-gradient(135deg, #b0bec5, #78909c);
+    color: white;
+    border: none;
+}
+
+.pass-box {
+    background: linear-gradient(135deg, #81c784, #4caf50);
+    color: white;
+    border: none;
+}
+
+.fail-box {
+    background: linear-gradient(135deg, #ef5350, #e53935);
+    color: white;
+    border: none;
+}
+
+.skip-box {
+    background: linear-gradient(135deg, #fff176, #ffd54f);
+    color: #5d4037;
+    border: none;
+}
+
+.summary-value {
+    font-size: 28px;
+    font-weight: 700;
+    margin: 5px 0;
+}
+
+.summary-label {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.error-message {
+    font-family: 'Roboto Mono', 'Consolas', monospace;
+    white-space: pre-wrap;
+    color: #d32f2f;
+    font-size: 13px;
+}
+
+.debug-info {
+    font-family: 'Roboto Mono', 'Consolas', 'Monaco', monospace;
+    font-size: 13px;
+    line-height: 1.6;
+    background-color: #1a1a1a;
+    color: #f8f8f2;
+    border-radius: 6px;
+    padding: 15px;
+    margin-top: 10px;
+    white-space: pre-wrap;
+    overflow-x: auto;
+    max-height: 0px;
+    opacity: 0;
+    transition: max-height 0.5s ease-in-out, opacity 0.4s ease-in-out;
+    word-wrap: break-word;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16);
+}
+
+.debug-toggle {
+    cursor: pointer;
+    background-color: #3f51b5;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 4px;
+    margin-top: 10px;
+    display: inline-block;
+    font-size: 13px;
+    transition: background-color 0.3s;
+    border: none;
+    text-decoration: none;
+    font-weight: 500;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.debug-toggle:hover {
+    background-color: #303f9f;
+    box-shadow: 0 3px 5px rgba(0,0,0,0.2);
+}
+            

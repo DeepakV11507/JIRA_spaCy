@@ -1,0 +1,630 @@
+{
+  "metadata": {
+    "threshold": 0.5,
+    "top_n": 5,
+    "include_comments": true,
+    "max_comments": 10,
+    "enhanced_scoring": true,
+    "optimized": true,
+    "total_tests": 6,
+    "tests_with_matches": 6,
+    "total_matches": 30,
+    "average_similarity": 0.8793493465989946,
+    "average_exact_match_bonus": 0.029,
+    "average_status_bonus": 0.09533333333333337
+  },
+  "results": [
+    {
+      "test_name": "test_maximum_video_length_set_to_7_seconds",
+      "test_path": "tests/iot/lt_indoor_camera/ranger_max_event_video_length.py::test_maximum_video_length_set_to_7_seconds",
+      "test_description": "maximum video length set to 7 seconds",
+      "test_case_id": "(C2804416803)",
+      "error": "Operation timed out",
+      "error_category": "timeout",
+      "root_cause": "timeout: time",
+      "error_confidence": "high",
+      "component": "tests iot lt_indoor_camera ranger_max_event_video_length.py::test_maximum_video_length_set_to_7_seconds",
+      "matches": [
+        {
+          "similarity": 0.9945761442760627,
+          "jira_key": "ASPEN-9741",
+          "summary": "Ranger video recording length exceeds maximum video length",
+          "status": "Open",
+          "matching_keywords": [
+            "length",
+            "video",
+            "maximum"
+          ],
+          "base_score": 0.6822401254574458,
+          "summary_score": 0.7528297901153564,
+          "description_score": 0.9129976034164429,
+          "comment_score": 0.8946142792701721,
+          "keyword_score": 0.09333333333333334,
+          "exact_match_bonus": 0.03,
+          "status_bonus": 0.1,
+          "recency_bonus": 0.08,
+          "confidence_multiplier": 1.15
+        },
+        {
+          "similarity": 0.9710533080852032,
+          "jira_key": "ASPEN-6816",
+          "summary": "[LT Camera]: Sound events aren't detected at sensitivity of 70 and below",
+          "status": "Open",
+          "matching_keywords": [],
+          "base_score": 0.6617854852914811,
+          "summary_score": 0.7788529396057129,
+          "description_score": 0.8567730188369751,
+          "comment_score": 0.8643403649330139,
+          "keyword_score": 0.032,
+          "exact_match_bonus": 0.03,
+          "status_bonus": 0.1,
+          "recency_bonus": 0.08,
+          "confidence_multiplier": 1.15
+        },
+        {
+          "similarity": 0.9378478617001982,
+          "jira_key": "ASPEN-8344",
+          "summary": "[LT][Alta][iOS] The \"No suggestions available\" error message is not showing and all areas of the live stream on detection zones are getting ignored",
+          "status": "Open",
+          "matching_keywords": [],
+          "base_score": 0.6850850971306072,
+          "summary_score": 0.8501890897750854,
+          "description_score": 0.8451524376869202,
+          "comment_score": 0.871867835521698,
+          "keyword_score": 0.014705882352941176,
+          "exact_match_bonus": 0.0,
+          "status_bonus": 0.1,
+          "recency_bonus": 0.05,
+          "confidence_multiplier": 1.15
+        },
+        {
+          "similarity": 0.936405031639954,
+          "jira_key": "ASPEN-10518",
+          "summary": "[LT Floodlight]: Add info/sub-text in the \"Light Settings\" option to educate user that settings is only applicable to \"Dark\" environment",
+          "status": "Open",
+          "matching_keywords": [],
+          "base_score": 0.6577435057738732,
+          "summary_score": 0.7917958498001099,
+          "description_score": 0.8458592891693115,
+          "comment_score": 0.8407471179962158,
+          "keyword_score": 0.017241379310344827,
+          "exact_match_bonus": 0.0,
+          "status_bonus": 0.1,
+          "recency_bonus": 0.08,
+          "confidence_multiplier": 1.15
+        },
+        {
+          "similarity": 0.9293374783938582,
+          "jira_key": "ASPEN-10070",
+          "summary": "[Ranger][iOS] Spotlight button is not getting enabled when spotlight is started in dark condition ",
+          "status": "Open",
+          "matching_keywords": [],
+          "base_score": 0.6515978072990072,
+          "summary_score": 0.8000926375389099,
+          "description_score": 0.8323954939842224,
+          "comment_score": 0.7988367676734924,
+          "keyword_score": 0.01818181818181818,
+          "exact_match_bonus": 0.0,
+          "status_bonus": 0.1,
+          "recency_bonus": 0.08,
+          "confidence_multiplier": 1.15
+        }
+      ]
+    },
+    {
+      "test_name": "test_maximum_video_length_set_to_10_seconds",
+      "test_path": "tests/iot/lt_indoor_camera/ranger_max_event_video_length.py::test_maximum_video_length_set_to_10_seconds",
+      "test_description": "maximum video length set to 10 seconds",
+      "test_case_id": "(C2804416804)",
+      "error": "Communication error",
+      "error_category": "communication",
+      "root_cause": "communication",
+      "error_confidence": "medium",
+      "component": "tests iot lt_indoor_camera ranger_max_event_video_length.py::test_maximum_video_length_set_to_10_seconds",
+      "matches": [
+        {
+          "similarity": 0.8424572078168392,
+          "jira_key": "ASPEN-9741",
+          "summary": "Ranger video recording length exceeds maximum video length",
+          "status": "Open",
+          "matching_keywords": [
+            "length",
+            "video",
+            "maximum"
+          ],
+          "base_score": 0.6023401979207993,
+          "summary_score": 0.6858325004577637,
+          "description_score": 0.7956886887550354,
+          "comment_score": 0.7539001703262329,
+          "keyword_score": 0.08,
+          "exact_match_bonus": 0.03,
+          "status_bonus": 0.1,
+          "recency_bonus": 0.08,
+          "confidence_multiplier": 1.05
+        },
+        {
+          "similarity": 0.7857751943850517,
+          "jira_key": "ASPEN-6816",
+          "summary": "[LT Camera]: Sound events aren't detected at sensitivity of 70 and below",
+          "status": "Open",
+          "matching_keywords": [],
+          "base_score": 0.5483573279857635,
+          "summary_score": 0.6181343793869019,
+          "description_score": 0.7402387261390686,
+          "comment_score": 0.741625964641571,
+          "keyword_score": 0.024,
+          "exact_match_bonus": 0.03,
+          "status_bonus": 0.1,
+          "recency_bonus": 0.08,
+          "confidence_multiplier": 1.05
+        },
+        {
+          "similarity": 0.7816168335045086,
+          "jira_key": "ASPEN-9395",
+          "summary": "[Android] \"Something went wrong\" error message is showing randomly while updating the pan scan positions",
+          "status": "Open",
+          "matching_keywords": [
+            "error"
+          ],
+          "base_score": 0.5539207938138178,
+          "summary_score": 0.6511300206184387,
+          "description_score": 0.7342307567596436,
+          "comment_score": 0.7013680934906006,
+          "keyword_score": 0.023529411764705882,
+          "exact_match_bonus": 0.08,
+          "status_bonus": 0.1,
+          "recency_bonus": 0.02,
+          "confidence_multiplier": 1.05
+        },
+        {
+          "similarity": 0.7773894829109863,
+          "jira_key": "ASPEN-9397",
+          "summary": "[iOS] \"Something went wrong\" error message is showing randomly while updating the pan scan positions",
+          "status": "Open",
+          "matching_keywords": [
+            "error"
+          ],
+          "base_score": 0.5498947456295108,
+          "summary_score": 0.6566948294639587,
+          "description_score": 0.7343794107437134,
+          "comment_score": 0.6743521690368652,
+          "keyword_score": 0.012345679012345678,
+          "exact_match_bonus": 0.08,
+          "status_bonus": 0.1,
+          "recency_bonus": 0.02,
+          "confidence_multiplier": 1.05
+        },
+        {
+          "similarity": 0.7756565948658518,
+          "jira_key": "ASPEN-10070",
+          "summary": "[Ranger][iOS] Spotlight button is not getting enabled when spotlight is started in dark condition ",
+          "status": "Open",
+          "matching_keywords": [],
+          "base_score": 0.5672919951103351,
+          "summary_score": 0.6901658773422241,
+          "description_score": 0.7373200058937073,
+          "comment_score": 0.6879462599754333,
+          "keyword_score": 0.018518518518518517,
+          "exact_match_bonus": 0.0,
+          "status_bonus": 0.1,
+          "recency_bonus": 0.08,
+          "confidence_multiplier": 1.05
+        }
+      ]
+    },
+    {
+      "test_name": "test_sound_sensitivity_minimum_loud_noise",
+      "test_path": "/workspaces/automation-ide/automated_tests/tests/iot/lt_indoor_camera/lt_cam_sound_sensitivity.py::test_sound_sensitivity_minimum_loud_noise",
+      "test_description": "sound sensitivity minimum loud noise",
+      "test_case_id": "(C2769314938)",
+      "error": "Detect not detected",
+      "error_category": "detection",
+      "root_cause": "detection: detect",
+      "error_confidence": "high",
+      "component": " workspaces automation-ide automated_tests tests iot lt_indoor_camera lt_cam_sound_sensitivity.py::test_sound_sensitivity_minimum_loud_noise",
+      "matches": [
+        {
+          "similarity": 0.9619609433222324,
+          "jira_key": "ASPEN-10104",
+          "summary": "[LT] Notification settings event detection types remain enabled despite disabling event detection types from event detection settings.",
+          "status": "Open",
+          "matching_keywords": [
+            "detection"
+          ],
+          "base_score": 0.6364877768019412,
+          "summary_score": 0.8029474020004272,
+          "description_score": 0.8041546940803528,
+          "comment_score": 0.7192477583885193,
+          "keyword_score": 0.031914893617021274,
+          "exact_match_bonus": 0.08,
+          "status_bonus": 0.1,
+          "recency_bonus": 0.05,
+          "confidence_multiplier": 1.15
+        },
+        {
+          "similarity": 0.9310665211033436,
+          "jira_key": "ASPEN-6816",
+          "summary": "[LT Camera]: Sound events aren't detected at sensitivity of 70 and below",
+          "status": "Open",
+          "matching_keywords": [
+            "sensitivity",
+            "sound",
+            "detect"
+          ],
+          "base_score": 0.6270143661768206,
+          "summary_score": 0.7433417439460754,
+          "description_score": 0.7992173433303833,
+          "comment_score": 0.7798007130622864,
+          "keyword_score": 0.06451612903225806,
+          "exact_match_bonus": 0.03,
+          "status_bonus": 0.1,
+          "recency_bonus": 0.08,
+          "confidence_multiplier": 1.15
+        },
+        {
+          "similarity": 0.8598818567031769,
+          "jira_key": "ASPEN-10383",
+          "summary": "[ALTA Camera Main Build]: Camera Fails to Detect Smoke Alarm",
+          "status": "Open",
+          "matching_keywords": [
+            "detect"
+          ],
+          "base_score": 0.6433755275679799,
+          "summary_score": 0.7735940217971802,
+          "description_score": 0.8191200494766235,
+          "comment_score": 0.7797518968582153,
+          "keyword_score": 0.06097560975609756,
+          "exact_match_bonus": 0.0,
+          "status_bonus": 0.1,
+          "recency_bonus": 0.02,
+          "confidence_multiplier": 1.15
+        },
+        {
+          "similarity": 0.8440640212625874,
+          "jira_key": "ASPEN-10229",
+          "summary": "[iOS][LT] Live label is not displayed on Detection zone, IR lights and Time lapse screen.",
+          "status": "Open",
+          "matching_keywords": [
+            "detection"
+          ],
+          "base_score": 0.6035339315326848,
+          "summary_score": 0.7702553868293762,
+          "description_score": 0.7858625650405884,
+          "comment_score": 0.6325633525848389,
+          "keyword_score": 0.02040816326530612,
+          "exact_match_bonus": 0.0,
+          "status_bonus": 0.1,
+          "recency_bonus": 0.05,
+          "confidence_multiplier": 1.15
+        },
+        {
+          "similarity": 0.8398935487094151,
+          "jira_key": "ASPEN-8344",
+          "summary": "[LT][Alta][iOS] The \"No suggestions available\" error message is not showing and all areas of the live stream on detection zones are getting ignored",
+          "status": "Open",
+          "matching_keywords": [
+            "detection"
+          ],
+          "base_score": 0.599907433660361,
+          "summary_score": 0.7254546284675598,
+          "description_score": 0.7836949229240417,
+          "comment_score": 0.7197495698928833,
+          "keyword_score": 0.029197080291970802,
+          "exact_match_bonus": 0.0,
+          "status_bonus": 0.1,
+          "recency_bonus": 0.05,
+          "confidence_multiplier": 1.15
+        }
+      ]
+    },
+    {
+      "test_name": "test_night_vision_mode_on_distance_on",
+      "test_path": "/workspaces/automation-ide/automated_tests/tests/iot/lt_indoor_camera/lt_cam_night_vision.py::test_night_vision_mode_on_distance_on",
+      "test_description": "night vision mode on distance on",
+      "test_case_id": "",
+      "error": "Communication error",
+      "error_category": "communication",
+      "root_cause": "communication: fail",
+      "error_confidence": "high",
+      "component": " workspaces automation-ide automated_tests tests iot lt_indoor_camera lt_cam_night_vision.py::test_night_vision_mode_on_distance_on",
+      "matches": [
+        {
+          "similarity": 0.9211384146038223,
+          "jira_key": "ASPEN-9397",
+          "summary": "[iOS] \"Something went wrong\" error message is showing randomly while updating the pan scan positions",
+          "status": "Open",
+          "matching_keywords": [
+            "error"
+          ],
+          "base_score": 0.6270768822641933,
+          "summary_score": 0.767991840839386,
+          "description_score": 0.8084055185317993,
+          "comment_score": 0.769505500793457,
+          "keyword_score": 0.011764705882352941,
+          "exact_match_bonus": 0.08,
+          "status_bonus": 0.1,
+          "recency_bonus": 0.02,
+          "confidence_multiplier": 1.15
+        },
+        {
+          "similarity": 0.9179423657461497,
+          "jira_key": "ASPEN-9395",
+          "summary": "[Android] \"Something went wrong\" error message is showing randomly while updating the pan scan positions",
+          "status": "Open",
+          "matching_keywords": [
+            "error"
+          ],
+          "base_score": 0.6242977093444781,
+          "summary_score": 0.7562844157218933,
+          "description_score": 0.8069281578063965,
+          "comment_score": 0.7703834772109985,
+          "keyword_score": 0.02247191011235955,
+          "exact_match_bonus": 0.08,
+          "status_bonus": 0.1,
+          "recency_bonus": 0.02,
+          "confidence_multiplier": 1.15
+        },
+        {
+          "similarity": 0.9062212446158708,
+          "jira_key": "ASPEN-6816",
+          "summary": "[LT Camera]: Sound events aren't detected at sensitivity of 70 and below",
+          "status": "Open",
+          "matching_keywords": [],
+          "base_score": 0.6054097779268443,
+          "summary_score": 0.6917263269424438,
+          "description_score": 0.8040885925292969,
+          "comment_score": 0.8203062415122986,
+          "keyword_score": 0.023255813953488372,
+          "exact_match_bonus": 0.03,
+          "status_bonus": 0.1,
+          "recency_bonus": 0.08,
+          "confidence_multiplier": 1.15
+        },
+        {
+          "similarity": 0.8984498265616058,
+          "jira_key": "ASPEN-10726",
+          "summary": " [Android] All smart home groups (Light, Plug, Bulb, Camera) fail to turn on from the home screen",
+          "status": "In Review",
+          "matching_keywords": [
+            "fail"
+          ],
+          "base_score": 0.6595215883144399,
+          "summary_score": 0.8038907647132874,
+          "description_score": 0.8381026983261108,
+          "comment_score": 0.8150269389152527,
+          "keyword_score": 0.030927835051546393,
+          "exact_match_bonus": 0.0,
+          "status_bonus": 0.06,
+          "recency_bonus": 0.08,
+          "confidence_multiplier": 1.15
+        },
+        {
+          "similarity": 0.8968907284447186,
+          "jira_key": "ASPEN-8344",
+          "summary": "[LT][Alta][iOS] The \"No suggestions available\" error message is not showing and all areas of the live stream on detection zones are getting ignored",
+          "status": "Open",
+          "matching_keywords": [
+            "error"
+          ],
+          "base_score": 0.6494701986475815,
+          "summary_score": 0.7990155220031738,
+          "description_score": 0.8264281749725342,
+          "comment_score": 0.8025283217430115,
+          "keyword_score": 0.014388489208633094,
+          "exact_match_bonus": 0.0,
+          "status_bonus": 0.1,
+          "recency_bonus": 0.05,
+          "confidence_multiplier": 1.15
+        }
+      ]
+    },
+    {
+      "test_name": "test_turn_on_off_spotlight_from_live_streaming_screen",
+      "test_path": "/workspaces/automation-ide/automated_tests/tests/iot/lt_indoor_camera/ranger_spotlight.py::test_turn_on_off_spotlight_from_live_streaming_screen",
+      "test_description": "turn on off spotlight from live streaming screen",
+      "test_case_id": "",
+      "error": "Operation timed out waiting for exception",
+      "error_category": "timeout",
+      "root_cause": "timeout",
+      "error_confidence": "high",
+      "component": " workspaces automation-ide automated_tests tests iot lt_indoor_camera ranger_spotlight.py::test_turn_on_off_spotlight_from_live_streaming_screen",
+      "matches": [
+        {
+          "similarity": 0.9508865821148668,
+          "jira_key": "ASPEN-10070",
+          "summary": "[Ranger][iOS] Spotlight button is not getting enabled when spotlight is started in dark condition ",
+          "status": "Open",
+          "matching_keywords": [
+            "spotlight"
+          ],
+          "base_score": 0.6703361583607538,
+          "summary_score": 0.7803157567977905,
+          "description_score": 0.8393540382385254,
+          "comment_score": 0.8462851643562317,
+          "keyword_score": 0.10714285714285714,
+          "exact_match_bonus": 0.0,
+          "status_bonus": 0.1,
+          "recency_bonus": 0.08,
+          "confidence_multiplier": 1.15
+        },
+        {
+          "similarity": 0.9293158628046511,
+          "jira_key": "ASPEN-10758",
+          "summary": "PiP shows back screen with spinning circle every few minutes while live streaming Roku channel on Avery. Tested with cameras app 3.7.32 and PiP enabled in the debug menu.",
+          "status": "Open",
+          "matching_keywords": [
+            "screen",
+            "streaming",
+            "live"
+          ],
+          "base_score": 0.7037529241779575,
+          "summary_score": 0.8706008195877075,
+          "description_score": 0.8573151230812073,
+          "comment_score": 0.825283408164978,
+          "keyword_score": 0.08695652173913043,
+          "exact_match_bonus": 0.0,
+          "status_bonus": 0.1,
+          "recency_bonus": 0.02,
+          "confidence_multiplier": 1.15
+        },
+        {
+          "similarity": 0.9196682167174864,
+          "jira_key": "ASPEN-10229",
+          "summary": "[iOS][LT] Live label is not displayed on Detection zone, IR lights and Time lapse screen.",
+          "status": "Open",
+          "matching_keywords": [
+            "screen",
+            "time",
+            "live"
+          ],
+          "base_score": 0.6692767101891187,
+          "summary_score": 0.8338339328765869,
+          "description_score": 0.8492067456245422,
+          "comment_score": 0.7140994668006897,
+          "keyword_score": 0.08163265306122448,
+          "exact_match_bonus": 0.0,
+          "status_bonus": 0.1,
+          "recency_bonus": 0.05,
+          "confidence_multiplier": 1.15
+        },
+        {
+          "similarity": 0.9149715456596968,
+          "jira_key": "ASPEN-10104",
+          "summary": "[LT] Notification settings event detection types remain enabled despite disabling event detection types from event detection settings.",
+          "status": "Open",
+          "matching_keywords": [],
+          "base_score": 0.6651926483997365,
+          "summary_score": 0.8098585605621338,
+          "description_score": 0.8399799466133118,
+          "comment_score": 0.8337911367416382,
+          "keyword_score": 0.030927835051546393,
+          "exact_match_bonus": 0.0,
+          "status_bonus": 0.1,
+          "recency_bonus": 0.05,
+          "confidence_multiplier": 1.15
+        },
+        {
+          "similarity": 0.9133463978565346,
+          "jira_key": "ASPEN-10140",
+          "summary": "[iOS] Error message is showing while switching the subscription ",
+          "status": "Blocked Needs Info",
+          "matching_keywords": [],
+          "base_score": 0.6203012155274215,
+          "summary_score": 0.7464311718940735,
+          "description_score": 0.8144143223762512,
+          "comment_score": 0.7536028027534485,
+          "keyword_score": 0.025423728813559324,
+          "exact_match_bonus": 0.18,
+          "status_bonus": 0.0,
+          "recency_bonus": 0.02,
+          "confidence_multiplier": 1.15
+        }
+      ]
+    },
+    {
+      "test_name": "test_smoke_alarm_detection",
+      "test_path": "tests/iot/lt_indoor_camera/lt_cam_alarm_sound_detection.py::test_smoke_alarm_detection",
+      "test_description": "smoke alarm detection",
+      "test_case_id": "(C2703862348)",
+      "error": "Detect not detected",
+      "error_category": "detection",
+      "root_cause": "detection: detect",
+      "error_confidence": "high",
+      "component": "tests iot lt_indoor_camera lt_cam_alarm_sound_detection.py::test_smoke_alarm_detection",
+      "matches": [
+        {
+          "similarity": 0.8777581774375655,
+          "jira_key": "ASPEN-10104",
+          "summary": "[LT] Notification settings event detection types remain enabled despite disabling event detection types from event detection settings.",
+          "status": "Open",
+          "matching_keywords": [
+            "detection"
+          ],
+          "base_score": 0.5632679803804918,
+          "summary_score": 0.7322226762771606,
+          "description_score": 0.7016686201095581,
+          "comment_score": 0.6027753353118896,
+          "keyword_score": 0.022727272727272728,
+          "exact_match_bonus": 0.08,
+          "status_bonus": 0.1,
+          "recency_bonus": 0.05,
+          "confidence_multiplier": 1.15
+        },
+        {
+          "similarity": 0.8352276614507039,
+          "jira_key": "ASPEN-10383",
+          "summary": "[ALTA Camera Main Build]: Camera Fails to Detect Smoke Alarm",
+          "status": "Open",
+          "matching_keywords": [
+            "alarm",
+            "smoke",
+            "detect"
+          ],
+          "base_score": 0.6219370969136556,
+          "summary_score": 0.7894760370254517,
+          "description_score": 0.7599628567695618,
+          "comment_score": 0.6854842305183411,
+          "keyword_score": 0.06666666666666667,
+          "exact_match_bonus": 0.0,
+          "status_bonus": 0.1,
+          "recency_bonus": 0.02,
+          "confidence_multiplier": 1.15
+        },
+        {
+          "similarity": 0.8075320874520989,
+          "jira_key": "ASPEN-6816",
+          "summary": "[LT Camera]: Sound events aren't detected at sensitivity of 70 and below",
+          "status": "Open",
+          "matching_keywords": [
+            "detect"
+          ],
+          "base_score": 0.5195931195235644,
+          "summary_score": 0.6246236562728882,
+          "description_score": 0.6654469966888428,
+          "comment_score": 0.6564258337020874,
+          "keyword_score": 0.02459016393442623,
+          "exact_match_bonus": 0.03,
+          "status_bonus": 0.1,
+          "recency_bonus": 0.08,
+          "confidence_multiplier": 1.15
+        },
+        {
+          "similarity": 0.7809041722402686,
+          "jira_key": "ASPEN-10229",
+          "summary": "[iOS][LT] Live label is not displayed on Detection zone, IR lights and Time lapse screen.",
+          "status": "Open",
+          "matching_keywords": [
+            "detection"
+          ],
+          "base_score": 0.5486123236871902,
+          "summary_score": 0.7032395005226135,
+          "description_score": 0.6910550594329834,
+          "comment_score": 0.5986056923866272,
+          "keyword_score": 0.023809523809523808,
+          "exact_match_bonus": 0.0,
+          "status_bonus": 0.1,
+          "recency_bonus": 0.05,
+          "confidence_multiplier": 1.15
+        },
+        {
+          "similarity": 0.7412450855845257,
+          "jira_key": "ASPEN-8344",
+          "summary": "[LT][Alta][iOS] The \"No suggestions available\" error message is not showing and all areas of the live stream on detection zones are getting ignored",
+          "status": "Open",
+          "matching_keywords": [
+            "detection"
+          ],
+          "base_score": 0.5141261613778485,
+          "summary_score": 0.6219037175178528,
+          "description_score": 0.6805270314216614,
+          "comment_score": 0.6043517589569092,
+          "keyword_score": 0.022900763358778626,
+          "exact_match_bonus": 0.0,
+          "status_bonus": 0.1,
+          "recency_bonus": 0.05,
+          "confidence_multiplier": 1.15
+        }
+      ]
+    }
+  ]
+}

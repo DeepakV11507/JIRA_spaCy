@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+            <html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Test Execution Report</title>
+                <link rel="preconnect" href="https://fonts.googleapis.com">
+                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@400;500&family=Roboto+Mono&display=swap" rel="stylesheet">
+                <link rel="stylesheet" href="assets/style.css">
+                <script>
+                    function toggleDebug(id) {
+                        var element = document.getElementById(id);
+                        var link = document.getElementById('link-' + id);
+
+                        if (element.style.maxHeight === "0px" || element.style.maxHeight === "") {
+                            element.style.maxHeight = "500px"; // Allow more space for debug info
+                            element.style.opacity = "1";
+                            link.textContent = "Hide Debug Info";
+                        } else {
+                            element.style.maxHeight = "0px";
+                            element.style.opacity = "0";
+                            link.textContent = "Show Debug Info";
+                        }
+                    }
+                </script>
+            </head>
+            <body>
+                <h1>Test Execution Report</h1>
+                <div class="report-timestamp">
+                    Report generated on: 2025-11-04 15:57:37
+                </div>
+
+                <div class="summary-container">
+                    <h2>Test Summary</h2>
+                    <div class="summary-box total-box">
+                        <div class="summary-value">2</div>
+                        <div class="summary-label">TOTAL</div>
+                    </div>
+                    <div class="summary-box pass-box">
+                        <div class="summary-value">0</div>
+                        <div class="summary-label">PASSED</div>
+                    </div>
+                    <div class="summary-box fail-box">
+                        <div class="summary-value">2</div>
+                        <div class="summary-label">FAILED</div>
+                    </div>
+                    <div class="summary-box skip-box">
+                        <div class="summary-value">0</div>
+                        <div class="summary-label">SKIPPED</div>
+                    </div>
+                </div>
+
+                <div class="results-container">
+                    <h2>Detailed Test Results</h2>
+                    <table>
+                        <tr>
+                            <th>Test Name</th>
+                            <th>Status</th>
+                            <th>Duration (s)</th>
+                            <th>Error Message</th>
+                        </tr>
+            
+                        <tr class="failed">
+                            <td>testCases/test_registerUser.py::Test_RegisterUser::test_register_a_new_user</td>
+                            <td>FAIL</td>
+                            <td>31.745</td>
+                            <td class="error-message">
+                                E           AssertionError: https://automationexercise.com/products url is not correct
+                                <button id="link-debug-1" class="debug-toggle" onclick="toggleDebug('debug-1')">Show Debug Info</button>
+                                <div id="debug-1" class="debug-info">
+                                    self = &lt;testCases.test_registerUser.Test_RegisterUser object at 0x1060a5d50&gt;
+setup = &lt;selenium.webdriver.firefox.webdriver.WebDriver (session="7aa244a1-3a89-48d5-b4a7-6aa503709384")&gt;
+
+    @allure.severity(allure.severity_level.MINOR)
+    @pytest.mark.sanity
+    def test_register_a_new_user(self, setup):
+        self.logger.info("*********************Started**************************")
+        self.driver = setup
+        self.hp = HomePage(self.driver)
+        self.hp.navigateToPage(self.baseUrl)
+        time.sleep(1)
+        self.hp.clickOnTitle()
+        time.sleep(1)
+        self.hp.clickOnLink('products')
+        time.sleep(2)
+    
+        actual_url = self.hp.getUrl()
+        print()
+        expected_url = "https://automationexercise.com/login"
+        print(actual_url)
+    
+        # time.sleep(500)
+        if expected_url != actual_url:
+            allure.attach(self.driver.get_screenshot_as_png(), name="abcd", attachment_type=AttachmentType.PNG)
+            self.driver.save_screenshot('ss.png')
+&gt;           assert expected_url == actual_url,f"{actual_url} url is not correct"
+E           AssertionError: https://automationexercise.com/products url is not correct
+E           assert 'https://auto...ise.com/login' == 'https://auto....com/products'
+E             
+E             [0m[91m- https://automationexercise.com/products[39;49;00m[90m[39;49;00m
+E             ?                                ^^ ^^^^^[90m[39;49;00m
+E             [92m+ https://automationexercise.com/login[39;49;00m[90m[39;49;00m
+E             ?                                ^ ^^^[90m[39;49;00m
+
+testCases/test_registerUser.py:53: AssertionError
+                                </div>
+                            </td>
+                        </tr>
+                    
+                        <tr class="failed">
+                            <td>testCases/test_registerUser_excel_ddt.py::Test_registerUser_excel_ddt::test_login_user_ex</td>
+                            <td>FAIL</td>
+                            <td>0.001</td>
+                            <td class="error-message">
+                                E                   FileNotFoundError: [Errno 2] No such file or directory: '/Users/jagdishpatil/Desktop/python_projects/spaCy/TestData/Book4.xlsx'
+                                <button id="link-debug-2" class="debug-toggle" onclick="toggleDebug('debug-2')">Show Debug Info</button>
+                                <div id="debug-2" class="debug-info">
+                                    self = &lt;testCases.test_registerUser_excel_ddt.Test_registerUser_excel_ddt object at 0x1069db910&gt;
+setup = &lt;selenium.webdriver.firefox.webdriver.WebDriver (session="5742a369-973e-4e5e-b405-74dff2b04661")&gt;
+
+    @pytest.mark.regression
+    def test_login_user_ex(self, setup):
+        self.logger.info("*********************Started**************************")
+        self.logger.info("*********************test_login_user**************************")
+        self.driver = setup
+        self.hp = HomePage(self.driver)
+        self.sp = SignUp_LoginPage(self.driver)
+    
+        print("#############################################")
+&gt;       print(XUtils.getRowCount(self.path, "Sheet1"))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+testCases/test_registerUser_excel_ddt.py:57: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+utilities/XUtils.py:6: in getRowCount
+    workbook = openpyxl.load_workbook(file)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../JIRA_AI_Attlansian/Python_Selenium_Framework/.venv/lib/python3.11/site-packages/openpyxl/reader/excel.py:346: in load_workbook
+    reader = ExcelReader(filename, read_only, keep_vba,
+../JIRA_AI_Attlansian/Python_Selenium_Framework/.venv/lib/python3.11/site-packages/openpyxl/reader/excel.py:123: in __init__
+    self.archive = _validate_archive(fn)
+                   ^^^^^^^^^^^^^^^^^^^^^
+../JIRA_AI_Attlansian/Python_Selenium_Framework/.venv/lib/python3.11/site-packages/openpyxl/reader/excel.py:95: in _validate_archive
+    archive = ZipFile(filename, 'r')
+              ^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = &lt;zipfile.ZipFile [closed]&gt;, file = '/Users/jagdishpatil/Desktop/python_projects/spaCy/TestData/Book4.xlsx', mode = 'r', compression = 0, allowZip64 = True
+compresslevel = None
+
+    def __init__(self, file, mode="r", compression=ZIP_STORED, allowZip64=True,
+                 compresslevel=None, *, strict_timestamps=True, metadata_encoding=None):
+        """Open the ZIP file with mode read 'r', write 'w', exclusive create 'x',
+        or append 'a'."""
+        if mode not in ('r', 'w', 'x', 'a'):
+            raise ValueError("ZipFile requires mode 'r', 'w', 'x', or 'a'")
+    
+        _check_compression(compression)
+    
+        self._allowZip64 = allowZip64
+        self._didModify = False
+        self.debug = 0  # Level of printing: 0 through 3
+        self.NameToInfo = {}    # Find file info given name
+        self.filelist = []      # List of ZipInfo instances for archive
+        self.compression = compression  # Method of compression
+        self.compresslevel = compresslevel
+        self.mode = mode
+        self.pwd = None
+        self._comment = b''
+        self._strict_timestamps = strict_timestamps
+        self.metadata_encoding = metadata_encoding
+    
+        # Check that we don't try to write with nonconforming codecs
+        if self.metadata_encoding and mode != 'r':
+            raise ValueError(
+                "metadata_encoding is only supported for reading files")
+    
+        # Check if we were passed a file-like object
+        if isinstance(file, os.PathLike):
+            file = os.fspath(file)
+        if isinstance(file, str):
+            # No, it's a filename
+            self._filePassed = 0
+            self.filename = file
+            modeDict = {'r' : 'rb', 'w': 'w+b', 'x': 'x+b', 'a' : 'r+b',
+                        'r+b': 'w+b', 'w+b': 'wb', 'x+b': 'xb'}
+            filemode = modeDict[mode]
+            while True:
+                try:
+&gt;                   self.fp = io.open(file, filemode)
+                              ^^^^^^^^^^^^^^^^^^^^^^^
+E                   FileNotFoundError: [Errno 2] No such file or directory: '/Users/jagdishpatil/Desktop/python_projects/spaCy/TestData/Book4.xlsx'
+
+/opt/homebrew/Cellar/python@3.11/3.11.13/Frameworks/Python.framework/Versions/3.11/lib/python3.11/zipfile.py:1295: FileNotFoundError
+                                </div>
+                            </td>
+                        </tr>
+                    
+                    </table>
+                </div>
+            </body>
+            </html>
+            

@@ -1,0 +1,25 @@
+# Secrets
+*.env
+.env
+.env.local
+secrets.json
+credentials.json
+
+# Large files
+*.mp4
+*.mov
+*.avi
+understand/
+
+# Data files with potential secrets
+activities/jira_issues.json
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.egg-info/
+dist/
+build/
+.idea/

@@ -1,0 +1,17 @@
+=== FAILED TESTS SUMMARY ===
+
+Test: testCases/test_registerUser.py::Test_RegisterUser::test_register_a_new_user
+Error: E           AssertionError: https://automationexercise.com/products url is not correct
+--------------------------------------------------------------------------------
+
+Test: testCases/test_registerUser_excel_ddt.py::Test_registerUser_excel_ddt::test_login_user_ex
+--------------------------------------------------------------------------------
+
+Test: tests/iot/lt_indoor_camera/lt_cam_sound_sensitivity.py::LTCameraSoundSensitivityTests::test_sound_sensitivity_minimum_loud_noise
+Error: E AssertionError: 'SOUND' event was not detected - Camera sound detection failed to trigger on minimum sensitivity setting with loud noise (Test Case ID: C27693149
+--------------------------------------------------------------------------------
+
+Test: android/app/floodlight/test_floodlight_thumbnail.py::TestFloodlightThumbnail::test_thumbnail_icons_after_enabling_floodlight
+Error: E UI Issue: Floodlight thumbnail shows both Spotlight and Floodlight icons after enabling Floodlight
+--------------------------------------------------------------------------------
+Total Failed Tests: 4
